@@ -99,6 +99,9 @@ sched:::wakeup
         printf("\n\ts_count (number of process group in session): ");
         trace(pg_session->s_count);
 
+        printf("\n\ts_leader (session leader): ");
+        trace(pg_session->s_leader->p_pid);
+
         printf("\n\tpg_id (process group id): ");
         trace(pgrp->pg_id);
 
