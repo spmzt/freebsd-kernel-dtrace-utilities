@@ -31,6 +31,7 @@ cpuset:
 session: 
         s_sid (process group session id): 689
         s_count (number of process group in session): 1
+	s_leader (session leader): 689
         pg_id (process group id): 689
 
 vmspace: 
