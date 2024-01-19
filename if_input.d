@@ -57,6 +57,10 @@ fbt:kernel:if_input:entry
     printf("  if_afdata_initialized: %d\n", this->ifp->if_afdata_initialized);
     printf("  if_fib: %u\n", this->ifp->if_fib);
     printf("  if_vnet: %p\n", this->ifp->if_vnet);
+    printf("    if_vnet->vnet_magic_n: %u\n", this->ifp->if_vnet->vnet_magic_n);
+    printf("    if_vnet->vnet_ifcnt: %u\n", this->ifp->if_vnet->vnet_ifcnt);
+    printf("    if_vnet->vnet_sockcnt: %u\n", this->ifp->if_vnet->vnet_sockcnt);
+    printf("    if_vnet->vnet_state: %u\n", this->ifp->if_vnet->vnet_state);
     printf("  if_home_vnet: %p\n", this->ifp->if_home_vnet);
     printf("  if_vlantrunk: %p\n", this->ifp->if_vlantrunk);
     printf("  if_bpf: %p\n", this->ifp->if_bpf);
