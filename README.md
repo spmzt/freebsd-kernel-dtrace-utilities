@@ -1,4 +1,9 @@
 # FreeBSD Kernel DTrace Utilities
+# Print probe struct
+## if_input sample
+```sh
+dtrace -n 'fbt:kernel:if_input:entry {print(*args[0]);}'
+```
 ## proc.d
 ```tcsh
 root@freebsd:~ # ./proc.d 689
